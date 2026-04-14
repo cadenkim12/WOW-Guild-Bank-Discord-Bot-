@@ -1,0 +1,26 @@
+Karazhan Guild Bank Discord Bot
+
+A Python Discord bot that helps guild members check guild bank material data from a Google Sheet.  
+The bot responds to simple slash-style commands in Discord and pulls live inventory, target amounts, and notes for items stored in the guild bank spreadsheet.
+
+Features
+
+- Look up a guild bank item with `/get [item]`
+- View available bot commands with `/help`
+- Refresh spreadsheet data with `/refresh`
+- Pulls data directly from Google Sheets
+- Normalizes item names so lookups are easier and more consistent
+
+How It Works
+
+This bot connects to:
+
+- **Discord** for user commands and responses
+- **Google Sheets** for guild bank inventory data
+
+Example
+
+When a user enters a command like:
+/get Illusion Dust 
+Should return:
+In Stock: (int), Target Amount: (int), Notes: " (Additional notes)
